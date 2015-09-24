@@ -1,0 +1,41 @@
+name: Item
+version: 1.0
+author: Heptagram
+depend: [Xero]
+main: xero.plugin.item.ItemPlugin
+
+commands:
+  item:
+    aliases: [i]
+    description: Item editing command
+    usage: /<command> help
+    permission: item
+  아이템:
+    description: 아이템 편집 명령
+    usage: /<command> help
+    permission: item
+    
+permissions:
+  item.*:
+    default: op
+    children:
+      item: true
+  item:
+    default: op
+  item.id: &cmd
+    default: op
+    children:
+      item: true
+  item.amount: *cmd
+  item.data: *cmd
+  item.name: *cmd
+  item.lore: *cmd
+  item.color: *cmd
+  item.title: *cmd
+  item.author: *cmd
+  item.unseal: *cmd
+  item.skullOwner: *cmd
+  item.enchant: *cmd
+  item.storedEnchant: *cmd
+  item.potion: *cmd
+    
