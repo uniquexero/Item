@@ -20,8 +20,6 @@ public class CommandItemUnbreakable extends ItemCommand
 	{
 		int id = item.getId();
 		
-		System.out.println(id);
-		
 		if (id != 257 && id != 270 && id != 274 && id != 278)
 			return false;
 		

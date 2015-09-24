@@ -20,7 +20,7 @@ public class CommandItemTitle extends ItemCommand
 	public boolean onCommand(Player sender, Command command, String label, String componentLabel, ArgumentList args, XeroItemStack item)
 	{
 		if (item.getId() != 387)
-			return true;
+			return false;
 		
 		String title = args.hasNext() ? ChatColor.translateAlternateColorCodes('&', args.join()) : null;
 		
