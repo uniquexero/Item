@@ -1,1 +1,3 @@
-Bukkit plugin for item editing
+#Item
+
+Minecraft editor plugin for bukkit
